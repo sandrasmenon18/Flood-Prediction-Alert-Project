@@ -51,7 +51,7 @@ a:link {
 a:hover,
 a:focus,
 a:visited {
-    color: #666;
+    color: rgb(97, 219, 235);
     text-decoration: none;
 }
 .vcenter {
@@ -222,13 +222,14 @@ a:visited {
     width: 100%;
     height: 100vh!important;
     object-fit: cover;
+    margin-top: 15%;
 }
 
 
 /*Header*/
 
 .background-header {
-    background-color: rgb(97, 219, 235);
+    background-color: #55cdf1;
     height: 80px!important;
     position: fixed!important;
     top: 0px;
@@ -270,7 +271,7 @@ a:visited {
   
   .header-area .main-nav .logo {
     line-height: 80px;
-    color: #191a20;
+    color: #4b0bfb;
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -288,7 +289,7 @@ a:visited {
     margin-top: 27px;
     margin-left: 8%;
     margin-right: 0px;
-    background-color: #fff;
+    background-color: #55cdf1;
     padding: 0px 0px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -312,7 +313,7 @@ a:visited {
     display: block;
     font-weight: 500;
     font-size: 13px;
-    color: #7a7a7a;
+    color: #050505;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -337,7 +338,7 @@ a:visited {
     font-family: sans-serif;
     content: "\f107";
     font-size: 12px;
-    color: #7a7a7a;
+    color: #55cdf1;
     position: absolute;
     right: 18px;
     top: 12px;
@@ -364,8 +365,8 @@ a:visited {
   
   .header-area .main-nav .nav li.submenu ul li a {
     display: block;
-    background: rgb(245, 250, 250);
-    color: #7a7a7a!important;
+    background: #55cdf1;
+    color: #030303!important;
     padding-left: 20px;
     height: 40px;
     line-height: 40px;
@@ -375,7 +376,7 @@ a:visited {
     transition: all 0.3s ease 0s;
     position: relative;
     font-size: 13px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #55cdf1;
   }
   
   .header-area .main-nav .nav li.submenu ul li a:before {
@@ -394,7 +395,7 @@ a:visited {
   }
   
   .header-area .main-nav .nav li.submenu ul li a:hover {
-    background: rgb(250, 250, 250);
+    background: #55cdf1;
     color: #4b0bfb!important;
     padding-left: 25px;
   }
@@ -550,7 +551,7 @@ a:visited {
       float: none!important;
     }
     .header-area {
-      background-color: #f7f7f7;
+      background-color: #55cdf1;
       padding: 0px 15px;
       height: 80px;
       box-shadow: none;
@@ -580,11 +581,11 @@ a:visited {
       margin-left: 0px;
     }
     .header-area .main-nav .nav li:first-child {
-      border-top: 1px solid #eee;
+      border-top: 1px solid #55cdf1;
     }
     .header-area .main-nav .nav li {
       width: 100%;
-      background: #fff;
+      background: #55cdf1;
       border-bottom: 1px solid #eee;
       padding-left: 0px !important;
       padding-right: 0px !important;
@@ -594,11 +595,11 @@ a:visited {
       line-height: 50px !important;
       padding: 0px !important;
       border: none !important;
-      background: #f7f7f7 !important;
+      background: #55cdf1!important;
       color: #191a20 !important;
     }
     .header-area .main-nav .nav li a:hover {
-      background: #eee !important;
+      background: #55cdf1 !important;
       color: #4b0bfb!important;
     }
     .header-area .main-nav .nav li.submenu ul {
@@ -624,7 +625,7 @@ a:visited {
       height: auto !important;
     }
     .header-area .main-nav .nav li.submenu:after {
-      color: #3B566E;
+      color: #55cdf1;
       right: 25px;
       font-size: 14px;
       top: 15px;
@@ -639,5 +640,4 @@ a:visited {
       display: flex !important;
     }
   }
-  
   
