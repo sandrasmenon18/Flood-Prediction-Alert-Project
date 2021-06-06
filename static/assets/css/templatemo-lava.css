@@ -118,7 +118,7 @@ body {
 }
 
 ::selection {
-  background: #55cdf1;
+  background: #9391c9;
   color: #fff;
 }
 
@@ -147,7 +147,7 @@ a.main-button-slider {
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
-  background-color:#4b0bfb ;
+  background-color:#9d8cc9 ;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -159,14 +159,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #55cdf1;
+  background-color: #3a8fe4;
 }
 
 a.main-button {
   font-size: 14px;
   border-radius: 25px;
   padding: 15px 25px;
-  background-color: #4b0bfb;
+  background-color: #4a99e4;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -178,7 +178,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #55cdf1;
+  background-color: #13477a;
 }
 
 button.main-button {
@@ -200,7 +200,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #55cdf1;
+  background-color: #a3b8f1;
 }
 
 
@@ -236,7 +236,7 @@ header
 */
 
 .background-header {
-  background-color: rgb(97, 219, 235);
+  background-color: #4b0bfb;
   height: 80px!important;
   position: fixed!important;
   
@@ -251,11 +251,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #4b0bfb!important;
+  color: #070707!important;
 }
 
 .background-header .nav li a.active {
-  color: #4b0bfb!important;
+  color: #48454e!important;
 }
 
 .header-area {
@@ -296,7 +296,7 @@ header
   margin-top: 27px;
   margin-left: 12%;
   margin-right: 0px;
-  background-color: rgb(97, 219, 235);
+  background-color: #4b0bfb;
   padding: 0px 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -319,7 +319,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #7a7a7a;
+  color: #f7f4f4;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -333,7 +333,7 @@ header
 
 
 .header-area .main-nav .nav li:hover a {
-  color: #4b0bfb;
+  color: #93919b;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -345,7 +345,7 @@ header
   font-family: sans-serif;
   content: "\f107";
   font-size: 12px;
-  color: #7a7a7a;
+  color: #7168ee;
   position: absolute;
   right: 18px;
   top: 12px;
@@ -372,8 +372,8 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a {
   display: block;
-  background: rgb(97, 219, 235);
-  color: #7a7a7a!important;
+  background: #4b0bfb;
+  color: #37abee!important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -398,12 +398,12 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #4b0bfb;
+  background: #eeeef3;
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
-  background: rgb(97, 219, 235);
-  color: #4b0bfb!important;
+  background: rgb(68, 45, 201);
+  color: #060607!important;
   padding-left: 25px;
 }
 
@@ -439,7 +439,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #020202;
   display: block;
   position: absolute;
   width: 30px;
@@ -539,7 +539,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #4b0bfb;
+  color: #ebe9f0;
 }
 
 @media (max-width: 1200px) {
@@ -607,7 +607,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #4b0bfb!important;
+    color: #efedf3!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -632,7 +632,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: #3B566E;
+    color: rgb(239, 239, 240);
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -659,7 +659,8 @@ welcome
 --------------------------------------------- 
 */
 .welcome-area {
-  margin-left: 5em;
+  padding-left: 18em;
+  background-color: paleturquoise;
   width: 100%;
   height: 100vh;
   min-height: 793px;
@@ -667,20 +668,21 @@ welcome
   position: relative;
   align-content: center;
   align-self: center;
-  margin-top: 35%;
+  padding-top: 22%;
   transform: perspective(1px) translateY(-30%) !important;
 }
 
 .welcome-area .header-text h1 {
-  margin-left: 8em;
+ padding-top: 2em;
+  padding-left: 3em;
   align-self: center;
   text-align: center;
   font-weight: 900;
-  font-size: 52px;
+  font-size: 50px;
   line-height: 80px;
   letter-spacing: 1px;
-  margin-bottom: 30px;
-  color: #191a20;
+  margin-bottom: 50px;
+  color: #4b0bfb;
 }
 
 .welcome-area .header-text h1 em {
