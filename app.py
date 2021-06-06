@@ -15,8 +15,17 @@ def hello_world():
 @app.route('/predict',methods=['POST','GET'])
 def predict():
     int_features=[float(x) for x in request.form.values()]
-    final=[np.array(int_features)]
     print(int_features)
+    import requests,bs4
+    res=requests.get("https://www.worldweatheronline.com/nileshwar-weather/kerala/in.aspx")
+    soup=bs4.BeautifulSoup(res.text,'lxml')
+    para=soup.select('p')
+    print(para[4].getText())
+    lis=para[4].getText().split()
+    print(lis)
+    rain=float(lis[1])
+    int_features[0]=rain
+    final=[np.array(int_features)]
     print(final)
     prediction=model.predict(final)
     print(prediction)
