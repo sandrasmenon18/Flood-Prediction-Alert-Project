@@ -43,7 +43,7 @@ regressor = RandomForestRegressor(bootstrap=True,
  min_samples_leaf= 4,
  min_samples_split=10,
  n_estimators= 400)
-regressor.fit(X_train, y_train)
+regressor.fit(X, y)
 
 
 
