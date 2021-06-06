@@ -30,16 +30,16 @@ def predict():
     prediction=model.predict(final)
     print(prediction)
     output='{0:.{1}f}'.format(prediction[0],4)
-    output=float(output)
+    # output=float(output)
     print(type(output))
-    if output>=4501:
-        return render_template('flood_pred.html',pred='Your region is in Danger.\nDischarge rate is {}'.format(output),sel="alert")
-    elif output>=0 and output<=2500:
-        return render_template('flood_pred.html',pred='Your region is Safe.\nDischarge rate is {}'.format(output),sel="alert1")
-    elif output>=2501 and output<=3500:
-        return render_template('flood_pred.html',pred='Your region is in Slight Danger.Watch and Be updated!!!\nDischarge rate is {}'.format(output),sel="alert2")
-    elif output>=3501 and output<=4500:
-        return render_template('flood_pred.html',pred='Be Prepared!!Your region is at risk.\n Discharge rate is {}'.format(output),sel="alert3")
+    if output>=str(4501):
+        return render_template('flood_pred.html',pred='Your region is in Danger',sel="alert")
+    elif output>=str(0) and output<=str(2500):
+        return render_template('flood_pred.html',pred='Your region is Safe',sel="alert1")
+    elif output>=str(2501) and output<=str(3500):
+        return render_template('flood_pred.html',pred='Your region is in Slight Danger.Watch and Be updated!!!',sel="alert2")
+    elif output>=str(3501) and output<=str(4500):
+        return render_template('flood_pred.html',pred='Be Prepared!!Your region is at risk.',sel="alert3")
 
 
 if __name__ == '__main__':
