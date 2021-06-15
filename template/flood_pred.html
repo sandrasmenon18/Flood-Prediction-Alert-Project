@@ -33,7 +33,7 @@
       cursor: pointer;
       transition: 0.3s;
     }
-    
+
     .closebtn:hover {
       color: black;
     }
@@ -89,7 +89,7 @@ https://templatemo.com/tm-540-lava-landing-page
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                             <li class="scroll-to-section"><a href="#sos" class="menu-item">SOS</a>
-                            <li class="scroll-to-section"><a href="#locations" class="menu-item">Locations</a>
+                            <li class="scroll-to-section"><a onclick="window.location.href='https://www.google.com/maps';" class="menu-item">Locations</a>
                             </li>
                             <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
                             <li class="submenu">
@@ -97,18 +97,18 @@ https://templatemo.com/tm-540-lava-landing-page
                                 <ul>
                                     <li><a href="../static/Precautions/precaution.html" class="menu-item">Precautions</a></li>
                                     <li><a href="../static/FAQ/faq.html" class="menu-item">FAQ's</a></li>
-                                    
+
                                 </ul>
-                            <li class="search"><input type="text" placeholder="Search Location"></li>   
-                             
+                            <li class="search"><input type="text" placeholder="Search Location"></li>
+
                             </li>
-                            
+
                         </ul>
-                        
+
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        
+
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
@@ -117,7 +117,7 @@ https://templatemo.com/tm-540-lava-landing-page
     </header>
     <!-- ***** Header Area End ***** -->
 
-    
+
 
 
     <!-- ***** Welcome Area Start ***** -->
@@ -127,66 +127,62 @@ https://templatemo.com/tm-540-lava-landing-page
         <div class="header-text">
             <div class="container">
                 <div class="row">
-                   
+
                         <h1>Know your Area!!</h1>
                   <h6>Neeleshwaram, Ernakulam, Kerala</h6>
-                        
+
                         <div class="section no-pad-bot" id="index-banner">
                             <div class="container">
                               <br><br>
-                              
-                              <div class="row center">
-                                <h5 class="header col s12 light">Predict the Discharge Rate
-                                <br>
-                                </h5>
-                              </div>
-                        
+
+
+
                                       <div class="row">
                             <form action='/predict' method="POST" class="col s12">
                               <div class="row">
                                 <div class="input-field col s4">
                                     <label for="first_name"><b>Rainfall</b></label>
                                     <br>
-                                  <input   id="first_name" name='Temperature'type="text" class="validate">
+                                  <input   id="first_name" name='Temperature'type="text" class="validate" placeholder="in mm" value={{r}}>
                                 </div>
                                 <div class="input-field col s4">
-                        
+
                                   <label for="last_name"><b>Soil Moisture </b></label>
                                     <br>
-                                  <input id="last_name"  name="Soil Moisture" type="text" class="validate">
-                        
+                                  <input id="last_name"  name="Soil Moisture" type="text" class="validate" placeholder="in %">
+
                                 </div>
-                                
+
                                 <div class="input-field col s4">
                                     <label for="_name"><b>Evapo-Transpiration</b></label>
                                     <br>
-                                  <input id="_name" name="Evapo-Transpiration" type="text" class="validate">
-                        
+                                  <input id="_name" name="Evapo-Transpiration" type="text" class="validate" placeholder="in mm">
+
                                 </div>
-                        
+
                               </div>
-                        
+
                               <br><br>
                               <div class="col-lg-12">
                         <fieldset>
-                            <button type="submit" id="form-submit" class="main-button">Predict Discharge</button>
+                            <button type="submit" id="form-submit" class="main-button">Predict</button>
 
                         </fieldset>
                               </div>
                             </form>
                               </div>
-                        
+
                               <br>
         <div class={{sel}}>
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
           {{pred}}
         </div>
         <br>
-                        
+
                             </div>
                           </div>
-                        
-                    
+
+
                 </div>
             </div>
         </div>
@@ -202,11 +198,11 @@ https://templatemo.com/tm-540-lava-landing-page
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
-                            
+
                             <img src="../static/images/f1.jpg" alt="">
                             <h4>Precautions</h4>
                             <a href="../static/Precautions/precaution.html" class="main-button">
-                                Read 
+                                Read
                             </a>
                         </div>
                     </div>
@@ -215,11 +211,11 @@ https://templatemo.com/tm-540-lava-landing-page
                     data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
-                            
+
                             <img src="../static/images/f2.png" alt="">
                             <h4>Staying Safe</h4>
                             <a href="../static/Saftey/stay-safe.html" class="main-button">
-                                Read 
+                                Read
                             </a>
                         </div>
                     </div>
@@ -228,7 +224,7 @@ https://templatemo.com/tm-540-lava-landing-page
                     data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                     <div class="features-item">
                         <div class="features-icon">
-                            
+
                             <img src="../static/images/f3.jpg" alt="">
                             <h4>FAQs</h4>
                             <a href="../static/FAQ/faq.html" class="main-button">
@@ -255,13 +251,13 @@ https://templatemo.com/tm-540-lava-landing-page
                 <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
                     <ul>
                         <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            
+
                             <div class="text">
-                                <h4>Weather News</h4>
-                                
+                                <h4><a href="https://www.worldweatheronline.com/nileshwar-weather/kerala/in.aspx">Weather News</a></h4>
+
                             </div>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -272,7 +268,7 @@ https://templatemo.com/tm-540-lava-landing-page
     <div class="right-image-decor"></div>
 
     <!-- ***** Testimonials Starts ***** -->
-   
+
     <!-- ***** Testimonials Ends ***** -->
 
 
@@ -317,22 +313,21 @@ https://templatemo.com/tm-540-lava-landing-page
                     <!-- ***** Contact Form End ***** -->
                     <div class="right-content col-lg-6 col-md-12 col-sm-12">
                         <h2>More About <em>Flood SOS</em></h2>
-                        <p>Floods are one of the most destructive natural disasters, which are highly complex to model. 
+                        <p>Floods are one of the most destructive natural disasters, which are highly complex to model.
                             There is a need to create systems that might contribute to risk reduction, policy suggestion, minimization of the loss of human life, and reduction regarding the property damage related to floods.
-                            Flood early warning systems are an efficient and affordable tool to mitigate flood risks without altering the fluvial ecosystems. 
+                            Flood early warning systems are an efficient and affordable tool to mitigate flood risks without altering the fluvial ecosystems.
                             These systems can predict the flood timings according to the given data and thus reduce the damage.
                             </p>
+                        <h6>Emergency Contact</h6>
                         <ul class="social">
-                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li>Flood Helpline: 1070, 1077</li>
+                            <li>Ambulance: 112</li>
+                            <li>Fire & Rescue Service: 101</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
     </footer>
 
     <!-- jQuery -->
